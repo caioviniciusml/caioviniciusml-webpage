@@ -59,6 +59,116 @@ export default function Home() {
           <p>From creating intuitive user interfaces to optimizing SEO and performance, I ensure that every project I work on is not only visually stunning but also strategically built to maximize results. Whether it’s revitalizing development processes, leading high-impact projects, or delivering polished solutions for businesses, my goal is to merge design and technology to create products that truly make a difference.</p>
         </div>
       </div>
+      <div className="flex flex-col items-center gap-10 md:gap-20">
+        <h2 className="w-fit py-2 px-4 text-base md:text-xl bg-graythird rounded-3xl">Tech Stacks</h2>
+        <div className="w-full flex flex-row flex-wrap justify-center gap-10">
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="HTML 5">
+            <Image
+              src={"/tech/html.svg"}
+              alt="HTML 5 Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="CSS 3">
+            <Image
+              src={"/tech/css.svg"}
+              alt="CSS 3 Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Sass">
+            <Image
+              src={"/tech/sass.svg"}
+              alt="Sass Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Postcss">
+            <Image
+              src={"/tech/postcss.svg"}
+              alt="Postcss Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Tailwind CSS">
+            <Image
+              src={"/tech/tailwind.svg"}
+              alt="Tailwind CSS Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Bootstrap">
+            <Image
+              src={"/tech/bootstrap.svg"}
+              alt="Bootstrap Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="JavaScript">
+            <Image
+              src={"/tech/javascript.svg"}
+              alt="JavaScript Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="TypeScript">
+            <Image
+              src={"/tech/typescript.svg"}
+              alt="TypeScript Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Node.js">
+            <Image
+              src={"/tech/node.svg"}
+              alt="Node.js Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Express.js">
+            <Image
+              src={"/tech/express.svg"}
+              alt="Express.js Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Nest.js">
+            <Image
+              src={"/tech/nest.svg"}
+              alt="Nest.js Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Git">
+            <Image
+              src={"/tech/git.svg"}
+              alt="Git Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="GitHub">
+            <Image
+              src={"/tech/github.svg"}
+              alt="GitHub Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Figma">
+            <Image
+              src={"/tech/figma.svg"}
+              alt="Figma Icon"
+              fill>
+            </Image>
+          </div>
+          <div className="relative h-12 md:h-16 w-12 md:w-16" title="Arch Linux">
+            <Image
+              src={"/tech/arch.svg"}
+              alt="Arch Linux Icon"
+              fill>
+            </Image>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
