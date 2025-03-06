@@ -14,7 +14,7 @@ export function Header() {
     const [openNav, setOpenNav] = useState(false)
 
     return (
-        <header className="py-5 flex justify-between items-center">
+        <header className="py-5 md:py-10 flex justify-between items-center">
             <Link href={'/'}>
                 caioviniciusml
             </Link>

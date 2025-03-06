@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function Footer() {
     return (
-        <footer className="grid grid-cols-1 gap-2 py-5 text-[10px] sm:text-xs lg:text-sm text-graysecondary">
+        <footer className="grid grid-cols-1 gap-2 py-5 md:py-10 text-[10px] sm:text-xs lg:text-sm text-graysecondary">
             <span>caioviniciusml</span>
             <div className="flex items-center justify-between">
                 <div className="grid grid-cols-1 gap-1 sm:gap-2">
