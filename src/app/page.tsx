@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="py-5 sm:py-10 lg:py-20 grid grid-cols-1 gap-20 lg:gap-40">
-      <div className="flex flex-col md:flex-row  items-center gap-10">
+      <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-3/5 grid grid-cols-1 gap-5 lg:gap-10">
-          <p className="text-grayprimary text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
+          <h1 className="text-grayprimary text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
             <b className="text-white">A FullStack Software Engineer</b> building modern web applications
-          </p>
+          </h1>
           <div className="flex gap-2 sm:gap-5 text-xs sm:text-base font-medium">
             <a className="py-2 px-4 lg:py-3 lg:px-6 flex items-center gap-1 sm:gap-2 text-center text-grayprimary border border-current hover:text-black hover:bg-white hover:border-white rounded-3xl" href={"/Resume - Caio Vinicius.pdf"} download>
               Download my Resume
@@ -38,6 +38,26 @@ export default function Home() {
       </div>
       <div className="flex justify-center text-center text-lg sm:text-xl md:text-2xl lg:text-4xl">
         <p className="md:w-3/4 text-transparent bg-gradient-to-r to-80% from-[#1E1E22] to-white bg-clip-text">Building high-performance web experiences that are both visually stunning and strategically optimized. No more trade-offs—let’s create solutions that engage users and drive results! </p>
+      </div>
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-grayprimary gap-16 lg:gap-32">
+        <div className="grid grid-cols-1 gap-1 order-2 md:order-1">
+          <Image
+            className="max-w-96 w-full"
+            src={"/mj.png"}
+            width={1240}
+            height={1242}
+            alt="Abstract Cube Image">
+          </Image>
+          <span><b className="text-white">Name:</b> Caio Vinicius</span>
+          <span><b className="text-white">Age:</b> 23</span>
+          <span><b className="text-white">Nationality:</b> Brazilian</span>
+          <span><b className="text-white">Email:</b> devcaioviniciusml@gmail.com</span>
+        </div>
+        <div className="md:w-1/2 grid grid-cols-1 gap-5 text-justify text-grayprimary text-base lg:text-xl order-1 md:order-2">
+          <h2 className="text-white text-4xl font-bold">About Me</h2>
+          <p>I’m Caio Vinícius, a Front-End Software Engineer with a passion for crafting seamless digital experiences. With a strong foundation in UI/UX and modern web technologies, I specialize in designing and developing fast, scalable, and conversion-driven web applications.</p>
+          <p>From creating intuitive user interfaces to optimizing SEO and performance, I ensure that every project I work on is not only visually stunning but also strategically built to maximize results. Whether it’s revitalizing development processes, leading high-impact projects, or delivering polished solutions for businesses, my goal is to merge design and technology to create products that truly make a difference.</p>
+        </div>
       </div>
     </main>
   );

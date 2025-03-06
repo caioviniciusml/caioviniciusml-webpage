@@ -18,7 +18,7 @@ export function Header() {
             <Link href={'/'}>
                 caioviniciusml
             </Link>
-            <nav className="hidden sm:flex gap-10 text-lg text-grayprimary">
+            <nav className="hidden sm:flex gap-10 text-lg text-grayprimary font-medium">
                 <Link href={'/experience'} className="hover:text-white">
                     Experience
                 </Link>
@@ -37,7 +37,7 @@ export function Header() {
                                 height: "32px",
                                 width: "32px"
                             }}
-                            alt="Menu Icone">
+                            alt="Side Navbar Icon">
                         </Image>
                     </SheetTrigger>
                     <SheetContent className="bg-black border-graysecondary w-52">
