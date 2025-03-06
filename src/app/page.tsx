@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="py-5 sm:py-10 lg:py-20 grid grid-cols-1 gap-5 sm:gap-10 lg:gap-20">
+    <main className="py-5 sm:py-10 lg:py-20 grid grid-cols-1 gap-20 lg:gap-40">
       <div className="flex flex-col md:flex-row  items-center gap-10">
         <div className="md:w-3/5 grid grid-cols-1 gap-5 lg:gap-10">
           <p className="text-grayprimary text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
@@ -35,6 +35,9 @@ export default function Home() {
           height={482}
           alt="Abstract Cube Image">
         </Image>
+      </div>
+      <div className="flex justify-center text-center text-lg sm:text-xl md:text-2xl lg:text-4xl">
+        <p className="md:w-3/4 text-transparent bg-gradient-to-r to-80% from-[#1E1E22] to-white bg-clip-text">Building high-performance web experiences that are both visually stunning and strategically optimized. No more trade-offs—let’s create solutions that engage users and drive results! </p>
       </div>
     </main>
   );
