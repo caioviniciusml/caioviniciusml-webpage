@@ -19,6 +19,9 @@ export function Header() {
                 caioviniciusml
             </Link>
             <nav className="hidden sm:flex gap-10 text-lg text-grayprimary font-medium">
+                <Link href={'/'} className="hover:text-white">
+                    Home
+                </Link>
                 <Link href={'/experience'} className="hover:text-white">
                     Experience
                 </Link>
@@ -43,6 +46,9 @@ export function Header() {
                     <SheetContent className="bg-black border-graysecondary w-52">
                         <SheetHeader>
                             <SheetTitle className="mt-5 flex flex-col items-start gap-2 text-lg text-white font-normal">
+                                <Link href={'/'} onClick={() => setOpenNav(!openNav)}>
+                                    Home
+                                </Link>
                                 <Link href={'/experience'} onClick={() => setOpenNav(!openNav)}>
                                     Experience
                                 </Link>
