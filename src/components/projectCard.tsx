@@ -12,20 +12,20 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, desc, img, target, tags }: ProjectCardProps){
     return(        
-        <Link className="min-h-[400px] border border-graythird grid grid-cols-1 md:grid-cols-2 group rounded-3xl bg-graybg overflow-hidden" href={target}>
+        <Link className="min-h-[400px] grid grid-cols-1 md:grid-cols-2 group border border-graythird bg-graybg rounded-3xl overflow-hidden" href={target}>
             <div className="h-64 md:h-auto relative overflow-hidden">
                 <Image
+                    className="group-hover:scale-110 transition duration-300 ease-in-out"
                     src={img}
                     style={{
                         objectFit: "cover",
                         objectPosition: "center",
-                        transition: "transform .2s",
                     }}
                     alt={`Showcase About the ${title} Project`}
                     fill>
                 </Image>
             </div>
-            <div className="py-10 px-5 md:px-10 flex flex-col gap-5 md:gap-10 text-white">
+            <div className="py-10 px-5 lg:px-10 flex flex-col gap-5 md:gap-10 text-white">
                 <h2 className="text-4xl font-bold">{title}</h2>
                 <p className="text-justify text-base">{desc}</p>
                 <div className="flex flex-wrap gap-8">
@@ -43,6 +43,14 @@ export function ProjectCard({ title, desc, img, target, tags }: ProjectCardProps
                         }
                     })}
                 </div>
+                <span className="flex items-center gap-2 text-lg text-graysecondary underline">
+                    Read More
+                    <Image
+                        src={"/arrow.svg"}
+                        width={16}
+                        height={16}
+                        alt="Arrow Icon"></Image>
+                </span>
             </div>
         </Link>
     )
