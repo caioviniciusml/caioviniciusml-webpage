@@ -8,6 +8,7 @@
   --color-grayprimary: #9F9F9F;
   --color-graysecondary: #999999;
   --color-graythird: #333333;
+  --color-graybg: #101010
 }
 
 @theme inline {
