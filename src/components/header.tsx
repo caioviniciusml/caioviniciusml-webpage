@@ -25,7 +25,7 @@ export function Header() {
     }, [])
 
     return (
-        <header className={`p-5 max-sm:sticky top-0 max-sm:border-b z-10 w-full max-w-screen-xl flex justify-between items-center bg-black ${isAtTop ? "border-black" : "border-graythird"} transition-all`}>
+        <header className={`p-5 sm:p-10 max-sm:sticky top-0 z-10 w-full max-w-screen-xl flex justify-between items-center bg-black max-sm:border-b ${isAtTop ? "border-black" : "border-graythird"} transition-all`}>
             <Link href={'/'}>
                 caioviniciusml
             </Link>
