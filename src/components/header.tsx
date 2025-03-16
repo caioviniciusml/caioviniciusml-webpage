@@ -56,7 +56,7 @@ export function Header() {
                     </SheetTrigger>
                     <SheetContent className="bg-black border-graysecondary w-52">
                         <SheetHeader>
-                            <SheetTitle className="mt-5 flex flex-col items-start gap-2 text-lg text-white font-normal">
+                            <SheetTitle className="mt-10 flex flex-col items-start gap-5 text-xl text-white">
                                 <Link href={'/'} onClick={() => setOpenNav(!openNav)}>
                                     Home
                                 </Link>
