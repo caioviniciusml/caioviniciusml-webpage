@@ -8,24 +8,35 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export function Header() {
-    const [openNav, setOpenNav] = useState(false)
+    const [openNav, setOpenNav] = useState<boolean>(false)
+    const [isAtTop, setIsAtTop] = useState<boolean>(true)
+
+    useEffect(() => {
+        window.addEventListener("scroll", () =>  {
+            if (window.scrollY > 0) {
+                setIsAtTop(false)
+            } else {
+                setIsAtTop(true)
+            }
+        })
+    }, [])
 
     return (
-        <header className="py-5 md:py-10 flex justify-between items-center">
+        <header className={`p-5 max-sm:sticky top-0 max-sm:border-b z-10 w-full max-w-screen-xl flex justify-between items-center bg-black ${isAtTop ? "border-black" : "border-graythird"} transition-all`}>
             <Link href={'/'}>
                 caioviniciusml
             </Link>
             <nav className="hidden sm:flex gap-10 text-lg text-grayprimary font-medium">
-                <Link href={'/'} className="hover:text-white">
+                <Link href={'/'} className="hover:text-white border-b-2 border-black hover:border-white">
                     Home
                 </Link>
-                <Link href={'/experience'} className="hover:text-white">
+                <Link href={'/experience'} className="hover:text-white border-b-2 border-black hover:border-white">
                     Experience
                 </Link>
-                <Link href={'/projects'} className="hover:text-white">
+                <Link href={'/projects'} className="hover:text-white border-b-2 border-black hover:border-white">
                     Projects
                 </Link>
             </nav>
