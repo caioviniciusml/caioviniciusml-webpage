@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function Footer() {
     return (
-        <footer className="p-5 sm:p-10 w-full max-w-screen-xl grid grid-cols-1 gap-2 text-[10px] sm:text-sm text-graysecondary">
+        <footer className="mt-10 sm:mt-20 p-5 sm:p-10 w-full max-w-screen-xl grid grid-cols-1 gap-2 text-[10px] sm:text-sm text-graysecondary">
             <span>caioviniciusml</span>
             <div className="flex items-center justify-between">
                 <div className="grid grid-cols-1 gap-1 sm:gap-2">
