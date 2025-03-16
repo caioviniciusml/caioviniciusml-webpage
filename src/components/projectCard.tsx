@@ -10,12 +10,12 @@ interface ProjectCardProps {
     tags: string[];
 }
 
-export function ProjectCard({ title, desc, img, target, tags }: ProjectCardProps){
-    return(        
-        <Link className="min-h-[400px] grid grid-cols-1 md:grid-cols-2 group border border-graythird bg-graybg rounded-3xl overflow-hidden" href={target}>
-            <div className="h-64 md:h-auto relative overflow-hidden">
+export function ProjectCard({ title, desc, img, target, tags }: ProjectCardProps) {
+    return (
+        <Link className="min-h-[500px] grid grid-cols-1 md:grid-cols-2 group border border-graythird bg-graybg rounded-3xl overflow-hidden" href={target}>
+            <div className="h-80 md:h-auto relative overflow-hidden">
                 <Image
-                    className="group-hover:scale-110 transition duration-300 ease-in-out"
+                    className="group-hover:scale-110 transition duration-500"
                     src={img}
                     style={{
                         objectFit: "cover",
@@ -27,11 +27,11 @@ export function ProjectCard({ title, desc, img, target, tags }: ProjectCardProps
             </div>
             <div className="py-10 px-5 lg:px-10 flex flex-col gap-5 md:gap-10 text-white">
                 <h2 className="text-4xl font-bold">{title}</h2>
-                <p className="text-justify text-base">{desc}</p>
+                <p className="text-justify text-base lg:text-lg font-medium">{desc}</p>
                 <div className="flex flex-wrap gap-8">
                     {techs.map((tech) => {
-                        if(tags.includes(tech.name)){
-                            return(
+                        if (tags.includes(tech.name)) {
+                            return (
                                 <div key={tech.name} className="relative h-8 w-8" title={tech.name}>
                                     <Image
                                         src={tech.img}
