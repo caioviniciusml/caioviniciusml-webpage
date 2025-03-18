@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, desc, img, target, tags }: ProjectCardProps) {
     return (
-        <Link className="min-h-[500px] grid grid-cols-1 md:grid-cols-2 group border border-graythird bg-graybg rounded-3xl overflow-hidden" href={target}>
+        <Link className="min-h-[500px] grid grid-cols-1 md:grid-cols-2 group border border-graythird bg-graybg hover:shadow-md shadow-graythird rounded-3xl overflow-hidden" href={target}>
             <div className="h-80 md:h-auto relative overflow-hidden">
                 <Image
                     className="group-hover:scale-110 transition duration-500"
