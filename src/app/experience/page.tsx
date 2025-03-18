@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Caio Vinicius | Experience",
+  description: "My work experience as a Software Engineer",
+};
+
 export default function Projects() {
   return (
     <div className="grid grid-cols-1 gap-5">

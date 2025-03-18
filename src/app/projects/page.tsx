@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import { ProjectCard } from "@/components/projectCard";
+
+export const metadata: Metadata = {
+  title: "Caio Vinicius | Projects",
+  description: "Showcase of my Personal Projects, highlighting my experience as FullStack Software Engineer",
+};
 
 export default function Projects() {
   return (

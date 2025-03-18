@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Caio Vinicius",
-  description: "Caio Vinicicus Portfolio - FullStack Software Engineer ",
+  description: "Caio Vinicicus Portfolio - FullStack Software Engineer",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
 	<html lang="en">
-	  <body className={`flex flex-col items-center gap-5 sm:gap-10 ${inter.className} bg-black text-white`}>
+	  <body className={`flex flex-col items-center gap-10 ${inter.className} bg-black text-white`}>
 		<Header />
 		<main className="px-5 sm:px-10 w-full max-w-screen-xl">
 		  {children}
