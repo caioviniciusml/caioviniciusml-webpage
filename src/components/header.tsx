@@ -4,7 +4,6 @@ import Image from "next/image"
 import {
     Sheet,
     SheetContent,
-    SheetHeader,
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
@@ -27,16 +26,22 @@ export function Header() {
     return (
         <header className={`p-5 sm:p-10 max-sm:sticky top-0 z-10 w-full max-w-screen-xl flex justify-between items-center bg-black max-sm:border-b ${isAtTop ? "border-black" : "border-graythird"} transition-all`}>
             <Link href={'/'}>
-                caioviniciusml
+                <Image
+                    className="w-48 sm:w-60"
+                    src={'/brand.png'}
+                    width={750}
+                    height={146}
+                    alt="Caioviniciusml Brand">
+                </Image>
             </Link>
-            <nav className="hidden sm:flex gap-10 text-lg text-grayprimary font-medium">
-                <Link href={'/'} className="hover:text-white border-b-2 border-black hover:border-white">
+            <nav className="hidden sm:flex gap-5 md:gap-10 text-xl text-grayprimary font-medium">
+                <Link href={'/'} className="border-b-2 border-black hover:border-white hover:text-white">
                     Home
                 </Link>
-                <Link href={'/experience'} className="hover:text-white border-b-2 border-black hover:border-white">
+                <Link href={'/experience'} className="border-b-2 border-black hover:border-white hover:text-white">
                     Experience
                 </Link>
-                <Link href={'/projects'} className="hover:text-white border-b-2 border-black hover:border-white">
+                <Link href={'/projects'} className="border-b-2 border-black hover:border-white hover:text-white">
                     Projects
                 </Link>
             </nav>
@@ -54,20 +59,24 @@ export function Header() {
                             alt="Side Navbar Icon">
                         </Image>
                     </SheetTrigger>
-                    <SheetContent className="bg-black border-graysecondary w-52">
-                        <SheetHeader>
-                            <SheetTitle className="mt-10 flex flex-col items-start gap-5 text-xl text-white">
-                                <Link href={'/'} onClick={() => setOpenNav(!openNav)}>
-                                    Home
-                                </Link>
-                                <Link href={'/experience'} onClick={() => setOpenNav(!openNav)}>
-                                    Experience
-                                </Link>
-                                <Link href={'/projects'} onClick={() => setOpenNav(!openNav)}>
-                                    Projects
-                                </Link>
-                            </SheetTitle>
-                        </SheetHeader>
+                    <SheetContent className="p-5 py-10 w-60 flex flex-col gap-5 text-xl font-bold text-white bg-black border-graysecondary ">
+                        <SheetTitle className="self-center">
+                            <Image
+                                src={'/logo.svg'}
+                                width={32}
+                                height={32}
+                                alt="Caioviniciusml Brand">
+                            </Image>
+                        </SheetTitle>
+                        <Link href={'/'} onClick={() => setOpenNav(!openNav)}>
+                            Home
+                        </Link>
+                        <Link href={'/experience'} onClick={() => setOpenNav(!openNav)}>
+                            Experience
+                        </Link>
+                        <Link href={'/projects'} onClick={() => setOpenNav(!openNav)}>
+                            Projects
+                        </Link>
                     </SheetContent>
                 </Sheet>
             </nav>
