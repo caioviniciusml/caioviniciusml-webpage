@@ -6,62 +6,62 @@ interface tech{
 export const techs: tech[] = [
         {
             "name": "HTML 5",
-            "img": "/tech/html.svg"
+            "img": "/techs/html.svg"
         },
         {
             "name": "CSS 3",
-            "img": "/tech/css.svg"
+            "img": "/techs/css.svg"
         },
         {
             "name": "Sass",
-            "img": "/tech/sass.svg"
+            "img": "/techs/sass.svg"
         },
         {
             "name": "Postcss",
-            "img": "/tech/postcss.svg"
+            "img": "/techs/postcss.svg"
         },
         {
             "name": "Tailwind",
-            "img": "/tech/tailwind.svg"
+            "img": "/techs/tailwind.svg"
         },
         {
             "name": "Bootstrap",
-            "img": "/tech/bootstrap.svg"
+            "img": "/techs/bootstrap.svg"
         },
         {
             "name": "JavaScript",
-            "img": "/tech/javascript.svg"
+            "img": "/techs/javascript.svg"
         },
         {
             "name": "TypeScript",
-            "img": "/tech/typescript.svg"
+            "img": "/techs/typescript.svg"
         },
         {
             "name": "Node.js",
-            "img": "/tech/node.svg"
+            "img": "/techs/node.svg"
         },
         {
             "name": "Express.js",
-            "img": "/tech/express.svg"
+            "img": "/techs/express.svg"
         },
         {
             "name": "Nest.js",
-            "img": "/tech/nest.svg"
+            "img": "/techs/nest.svg"
         },
         {
             "name": "Git",
-            "img": "/tech/git.svg"
+            "img": "/techs/git.svg"
         },
         {
             "name": "GitHub",
-            "img": "/tech/github.svg"
+            "img": "/techs/github.svg"
         },
         {
             "name": "Figma",
-            "img": "/tech/figma.svg"
+            "img": "/techs/figma.svg"
         },
         {
             "name": "Arch Linux",
-            "img": "/tech/arch.svg"
+            "img": "/techs/arch.svg"
         },
 ]
